@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="180" stroke="#000000" stroke-width="2" width="70" x="210" y="80"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="223" y="95">A3</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="223" y="115">A2</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="224" y="134">A1</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="223" y="154">A0</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="222" y="195">B3</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="222" y="215">B2</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="222" y="235">B1</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="222" y="254">B0</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="266" y="135">S3</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="266" y="164">S2</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="268" y="194">S1</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="267" y="224">S0</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="239" y="179">XNOR</text>
+      <circ-port height="8" pin="380,170" width="8" x="206" y="86"/>
+      <circ-port height="8" pin="380,190" width="8" x="206" y="186"/>
+      <circ-port height="8" pin="380,230" width="8" x="206" y="106"/>
+      <circ-port height="8" pin="380,250" width="8" x="206" y="206"/>
+      <circ-port height="8" pin="380,290" width="8" x="206" y="126"/>
+      <circ-port height="8" pin="380,310" width="8" x="206" y="226"/>
+      <circ-port height="8" pin="380,350" width="8" x="206" y="146"/>
+      <circ-port height="8" pin="380,370" width="8" x="206" y="246"/>
+      <circ-port height="10" pin="480,180" width="10" x="275" y="125"/>
+      <circ-port height="10" pin="480,240" width="10" x="275" y="155"/>
+      <circ-port height="10" pin="480,300" width="10" x="275" y="185"/>
+      <circ-port height="10" pin="480,360" width="10" x="275" y="215"/>
+      <circ-anchor facing="east" height="6" width="6" x="267" y="87"/>
+    </appear>
+    <wire from="(470,180)" to="(480,180)"/>
+    <wire from="(470,240)" to="(480,240)"/>
+    <wire from="(470,300)" to="(480,300)"/>
+    <wire from="(470,360)" to="(480,360)"/>
+    <wire from="(380,170)" to="(400,170)"/>
+    <wire from="(380,190)" to="(400,190)"/>
+    <wire from="(380,370)" to="(400,370)"/>
+    <wire from="(380,350)" to="(400,350)"/>
+    <wire from="(380,310)" to="(400,310)"/>
+    <wire from="(380,290)" to="(400,290)"/>
+    <wire from="(380,250)" to="(400,250)"/>
+    <wire from="(380,230)" to="(400,230)"/>
+    <comp lib="1" loc="(470,240)" name="XNOR Gate"/>
+    <comp lib="0" loc="(380,310)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(480,360)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(480,300)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(470,180)" name="XNOR Gate"/>
+    <comp lib="0" loc="(380,190)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(380,230)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(380,370)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(380,350)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(480,240)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(470,300)" name="XNOR Gate"/>
+    <comp lib="0" loc="(380,290)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(380,170)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(480,180)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(380,250)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(470,360)" name="XNOR Gate"/>
+  </circuit>
+</project>
